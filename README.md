@@ -5,15 +5,14 @@ Fixes the client-side block breaking delay; this feature is toggleable with the 
 
 - Minecraft version: 1.19
 - Mod loader: Fabric
-- Fabric version: 0.14.14+
+- Fabric version: 0.14.12+
 - Fabric API: Any
 
 ## Features
-All of these features are configurable and enabled by default.
+Mining cooldown is disabled by default.
 
 - Toggleable mining cooldown
 - Bindable toggle key
-
 
 ## Reason
 
