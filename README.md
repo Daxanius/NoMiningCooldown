@@ -3,9 +3,9 @@ Fixes the client-side block breaking delay; this feature is toggleable with the 
 
 ## Information
 
-- Minecraft version: 1.19
+- Minecraft version: 1.20.1
 - Mod loader: Fabric
-- Fabric version: 0.14.12+
+- Fabric version: 0.14.21+
 - Fabric API: Any
 
 ## Features
