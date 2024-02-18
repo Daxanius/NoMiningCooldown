@@ -20,8 +20,8 @@
     "nmc.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=0.14.21",
-    "fabric": "*",
-    "minecraft": ">=1.20"
+    "minecraft": ">=${minecraft_version}",
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*"
   }
 }
