@@ -35,7 +35,7 @@ public class NoMiningCooldownClient implements ClientModInitializer {
 
                 // Toggle the cool-down fix
                 cooldownFixEnabled = !cooldownFixEnabled;
-                client.player.sendMessage(Text.translatable(cooldownFixEnabled ? "message.nmc.cooldown_disabled" : "message.nmc.cooldown_enabled"));
+                client.player.sendMessage(Text.translatable(cooldownFixEnabled ? "message.nmc.cooldown_disabled" : "message.nmc.cooldown_enabled"), true);
             }
         });
     }
