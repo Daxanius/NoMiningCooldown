@@ -20,10 +20,10 @@ public class NoMiningCooldownClient implements ClientModInitializer {
     public void onInitializeClient() {
         // Register keybinds
         toggleCooldownKeyBinding = KeyBindingHelper.registerKeyBinding(new KeyBinding(
-                "key.nmc.toggle", // Keybinding translation
-                InputUtil.Type.KEYSYM, // Input type
-                GLFW.GLFW_KEY_G, // Keycode
-                "key.categories.misc" // Category translation
+                "key.nmc.toggle",
+                InputUtil.Type.KEYSYM,
+                GLFW.GLFW_KEY_G,
+                KeyBinding.Category.MISC // <- changed here
         ));
 
         // Add key listener
