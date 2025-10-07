@@ -9,7 +9,7 @@ public class NoMiningCooldownClient {
     private static Object toggleKey;
     public static boolean cooldownFixEnabled = true;
 
-    public static void initClient() {
+    public static void init() {
         toggleKey = Services.CLIENT_INPUT.registerKeyBinding(
                 "key.nmc.toggle",
                 GLFW.GLFW_KEY_G,

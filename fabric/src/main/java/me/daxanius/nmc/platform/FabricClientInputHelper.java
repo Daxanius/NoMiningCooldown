@@ -14,13 +14,12 @@ public class FabricClientInputHelper implements IClientInputHelper {
 
     @Override
     public Object registerKeyBinding(String translationKey, int defaultKeyCode, KeyMapping.Category category) {
-        KeyMapping keyMapping = KeyBindingHelper.registerKeyBinding(new KeyMapping(
+        return KeyBindingHelper.registerKeyBinding(new KeyMapping(
                 translationKey,
                 InputConstants.Type.KEYSYM,
                 defaultKeyCode,
                 category
         ));
-        return keyMapping;
     }
 
     @Override

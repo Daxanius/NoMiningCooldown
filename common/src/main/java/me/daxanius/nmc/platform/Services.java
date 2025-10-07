@@ -9,10 +9,6 @@ import java.util.ServiceLoader;
 // environment to another. In the context of MultiLoader we use this feature to access a mock API in the common code that
 // is swapped out for the platform specific implementation at runtime.
 public class Services {
-
-    // In this example we provide a platform helper which provides information about what platform the mod is running on.
-    // For example this can be used to check if the code is running on Forge vs Fabric, or to ask the modloader if another
-    // mod is loaded.
     public static final IClientInputHelper CLIENT_INPUT = load(IClientInputHelper.class);
 
     // This code is used to load a service for the current environment. Your implementation of the service must be defined
