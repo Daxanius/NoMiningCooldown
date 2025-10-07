@@ -1,18 +1,17 @@
 package me.daxanius.nmc;
 
-import net.minecraftforge.event.TickEvent;
-import net.minecraftforge.eventbus.api.listener.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
+import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 @Mod(value = Constants.MOD_ID)
 public class ForgeNoMiningCooldown {
-    private boolean initialized = false;
+    public ForgeNoMiningCooldown(FMLJavaModLoadingContext context) {
+        var modBusGroup = context.getModBusGroup();
+        FMLClientSetupEvent.getBus(modBusGroup).addListener(this::onClientSetup);
+    }
 
-    @SubscribeEvent
-    private void onClientTick(TickEvent.ClientTickEvent.Post event) {
-        if (!initialized) {
-            NoMiningCooldownClient.init();
-            initialized = true;
-        }
+    private void onClientSetup(FMLClientSetupEvent event) {
+        NoMiningCooldownClient.init();
     }
 }

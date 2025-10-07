@@ -1,7 +1,6 @@
 package me.daxanius.nmc.platform;
 
 import me.daxanius.nmc.Constants;
-import me.daxanius.nmc.NoMiningCooldownClient;
 import me.daxanius.nmc.platform.services.IClientInputHelper;
 import net.minecraft.client.KeyMapping;
 import net.minecraftforge.client.event.RegisterKeyMappingsEvent;
