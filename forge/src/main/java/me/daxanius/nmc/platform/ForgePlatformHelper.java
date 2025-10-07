@@ -1,6 +1,5 @@
 package me.daxanius.nmc.platform;
 
-import me.daxanius.nmc.platform.services.IPlatformHelper;
 import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.loading.FMLLoader;
 

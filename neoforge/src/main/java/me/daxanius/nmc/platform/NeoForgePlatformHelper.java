@@ -1,6 +1,5 @@
 package me.daxanius.nmc.platform;
 
-import me.daxanius.nmc.platform.services.IPlatformHelper;
 import net.neoforged.fml.ModList;
 import net.neoforged.fml.loading.FMLLoader;
 
