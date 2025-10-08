@@ -1,0 +1,5 @@
+{
+  "key.nmc.toggle": "切换挖矿冷却",
+  "message.nmc.cooldown_enabled": "挖矿冷却已开启",
+  "message.nmc.cooldown_disabled": "挖矿冷却已关闭"
+}

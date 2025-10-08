@@ -1,0 +1,5 @@
+{
+  "key.nmc.toggle": "Alternar tempo de espera da mineração",
+  "message.nmc.cooldown_enabled": "Tempo de espera da mineração ativado",
+  "message.nmc.cooldown_disabled": "Tempo de espera da mineração desativado"
+}
