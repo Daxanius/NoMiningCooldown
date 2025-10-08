@@ -6,6 +6,6 @@ import net.fabricmc.api.ClientModInitializer;
 public class FabricNoMiningCooldownClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
-        NoMiningCooldownClient.init();
+        NoMiningCooldown.initClient();
     }
 }

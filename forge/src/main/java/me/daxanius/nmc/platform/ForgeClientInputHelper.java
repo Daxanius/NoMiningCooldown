@@ -1,7 +1,7 @@
 package me.daxanius.nmc.platform;
 
 import me.daxanius.nmc.Constants;
-import me.daxanius.nmc.NoMiningCooldownClient;
+import me.daxanius.nmc.NoMiningCooldown;
 import me.daxanius.nmc.platform.services.IClientInputHelper;
 import net.minecraft.client.KeyMapping;
 import net.minecraftforge.client.event.RegisterKeyMappingsEvent;
@@ -21,7 +21,7 @@ public class ForgeClientInputHelper implements IClientInputHelper {
     @SubscribeEvent
     public static void registerBindings(RegisterKeyMappingsEvent event) {
         if (!initialized) {
-            NoMiningCooldownClient.init(); // Initialize the client before bindings lol, we love forges
+            NoMiningCooldown.initClient(); // Initialize the client before bindings lol, we love forges
             initialized = true;
         }
 

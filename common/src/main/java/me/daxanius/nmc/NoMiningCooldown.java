@@ -5,11 +5,11 @@ import net.minecraft.client.KeyMapping;
 import net.minecraft.network.chat.Component;
 import org.lwjgl.glfw.GLFW;
 
-public class NoMiningCooldownClient {
+public class NoMiningCooldown {
     private static Object toggleKey;
     public static boolean cooldownFixEnabled = true;
 
-    public static void init() {
+    public static void initClient() {
         toggleKey = Services.CLIENT_INPUT.registerKeyBinding(
                 "key.nmc.toggle",
                 GLFW.GLFW_KEY_G,
