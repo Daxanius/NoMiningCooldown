@@ -3,6 +3,14 @@ plugins {
     id 'net.minecraftforge.gradle'
 }
 
+jar {
+    manifest {
+        attributes([
+            'MixinConfigs': 'nmc.mixins.json,nmc.forge.mixins.json'
+        ])
+    }
+}
+
 base {
     archivesName = "${mod_name}-forge-${minecraft_version}"
 }
