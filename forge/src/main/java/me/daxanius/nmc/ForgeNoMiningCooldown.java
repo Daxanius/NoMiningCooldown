@@ -1,11 +1,15 @@
 package me.daxanius.nmc;
 
+import me.daxanius.nmc.platform.ForgeClientInputHelper;
+import net.minecraftforge.client.event.RegisterKeyMappingsEvent;
+import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 @Mod(value = Constants.MOD_ID)
 public class ForgeNoMiningCooldown {
-    public ForgeNoMiningCooldown(FMLJavaModLoadingContext context) {
-        // We love forge (not)
+    public ForgeNoMiningCooldown() {
+        RegisterKeyMappingsEvent.BUS.addListener(ForgeClientInputHelper::registerBindings);
+        TickEvent.ClientTickEvent.Post.BUS.addListener(ForgeClientInputHelper::onClientTick);
+        NoMiningCooldown.initClient();
     }
 }
