@@ -1,0 +1,5 @@
+{
+  "key.nmc.toggle": "Переключить перезарядку добычи",
+  "message.nmc.cooldown_enabled": "Перезарядка добычи включена",
+  "message.nmc.cooldown_disabled": "Перезарядка добычи отключена"
+}
