@@ -21,9 +21,9 @@ public class NoMiningCooldown {
                 var client = net.minecraft.client.Minecraft.getInstance();
                 if (client.player != null) {
                     cooldownFixEnabled = !cooldownFixEnabled;
-                    client.player.displayClientMessage(Component.translatable(
+                    client.player.sendSystemMessage(Component.translatable(
                             cooldownFixEnabled ? "message.nmc.cooldown_disabled" : "message.nmc.cooldown_enabled"
-                    ), true);
+                    ));
                 }
             }
         });

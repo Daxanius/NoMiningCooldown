@@ -2,7 +2,7 @@ package me.daxanius.nmc.platform;
 
 import me.daxanius.nmc.platform.services.IClientInputHelper;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
-import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
+import net.fabricmc.fabric.api.client.keymapping.v1.KeyMappingHelper;
 import net.minecraft.client.KeyMapping;
 import com.mojang.blaze3d.platform.InputConstants;
 
@@ -14,7 +14,7 @@ public class FabricClientInputHelper implements IClientInputHelper {
 
     @Override
     public Object registerKeyBinding(String translationKey, int defaultKeyCode, KeyMapping.Category category) {
-        return KeyBindingHelper.registerKeyBinding(new KeyMapping(
+        return KeyMappingHelper.registerKeyMapping(new KeyMapping(
                 translationKey,
                 InputConstants.Type.KEYSYM,
                 defaultKeyCode,
