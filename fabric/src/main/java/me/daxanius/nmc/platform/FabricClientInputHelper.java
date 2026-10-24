@@ -16,7 +16,7 @@ public class FabricClientInputHelper implements IClientInputHelper {
     public Object registerKeyBinding(String translationKey, int defaultKeyCode, KeyMapping.Category category) {
         return KeyMappingHelper.registerKeyMapping(new KeyMapping(
                 translationKey,
-                InputConstants.Type.KEYSYM,
+                InputConstants.Type.KEYBOARD,
                 defaultKeyCode,
                 category
         ));

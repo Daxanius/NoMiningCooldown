@@ -20,7 +20,6 @@ tasks.withType(Jar).configureEach {
 }
 
 jar {
-
     manifest {
         attributes([
                 'Specification-Title'   : mod_name,

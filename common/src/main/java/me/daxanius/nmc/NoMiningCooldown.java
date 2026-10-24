@@ -3,7 +3,6 @@ package me.daxanius.nmc;
 import me.daxanius.nmc.platform.Services;
 import net.minecraft.client.KeyMapping;
 import net.minecraft.network.chat.Component;
-import org.lwjgl.glfw.GLFW;
 
 public class NoMiningCooldown {
     private static Object toggleKey;
@@ -12,7 +11,7 @@ public class NoMiningCooldown {
     public static void initClient() {
         toggleKey = Services.CLIENT_INPUT.registerKeyBinding(
                 "key.nmc.toggle",
-                GLFW.GLFW_KEY_G,
+                10, // G key
                 KeyMapping.Category.MISC
         );
 
